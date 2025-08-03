@@ -11,6 +11,7 @@ var dir = Vector3.ZERO
 var fall_acceleration = 25
 var falling = false
 var score = 100
+var boosted = false
 
 
 
@@ -109,6 +110,7 @@ func boostsheep():
 	print("BOOSTED")
 	$Pivot/AnimatedSprite3D.visible = false
 	$Pivot/AnimatedSprite3D2.visible = true
+	boosted = true
 
 
 
@@ -122,5 +124,7 @@ func _on_timer_3_timeout():
 	print("Im caught")
 	get_tree().call_group("main", "spawnSheep")
 	Playerauto.score += score
+	if boosted:
+		get_tree().call_group("main", "extratime")
 	print(Playerauto.score)
 	get_parent().remove_child(self)

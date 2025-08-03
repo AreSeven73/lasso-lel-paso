@@ -25,6 +25,8 @@ func _physics_process(delta):
 			#velocity.x = 0
 			#velocity.z = 0
 			$Timer.start(1.6)
+			if randi_range(1,8) <3:
+				get_tree().call_group("voiceline", "voiceline")
 			$attack.visible = true
 			#$attack.rotation = direction
 			$attack/CollisionShape3D.disabled = false

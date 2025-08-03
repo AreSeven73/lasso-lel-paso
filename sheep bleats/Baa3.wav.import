@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cit3fcytytryv"
+path="res://.godot/imported/Baa3.wav-a3af3d5a576dd077bb79d118f49266fa.sample"
+
+[deps]
+
+source_file="res://sheep bleats/Baa3.wav"
+dest_files=["res://.godot/imported/Baa3.wav-a3af3d5a576dd077bb79d118f49266fa.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

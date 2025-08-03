@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dixe1yutepcfy"
+path="res://.godot/imported/Dogman voicelines4.wav-b7f8be01c86bbdf541dc6956227a2106.sample"
+
+[deps]
+
+source_file="res://voicelines/lelpaso/Dogman voicelines4.wav"
+dest_files=["res://.godot/imported/Dogman voicelines4.wav-b7f8be01c86bbdf541dc6956227a2106.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

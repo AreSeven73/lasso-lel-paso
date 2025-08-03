@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://cjh5o6cfo6nw6"]
+[gd_scene load_steps=113 format=3 uid="uid://cjh5o6cfo6nw6"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_bbjhg"]
 [ext_resource type="Script" path="res://Ground.gd" id="1_bg2b2"]
@@ -8,13 +8,67 @@
 [ext_resource type="Shader" path="res://main.gdshader" id="2_vymal"]
 [ext_resource type="Script" path="res://Ground2.gd" id="3_i0bin"]
 [ext_resource type="Script" path="res://Ground3.gd" id="4_cs3ch"]
+[ext_resource type="FontFile" uid="uid://gyno7fhla7yk" path="res://slkscr.ttf" id="5_524eq"]
 [ext_resource type="PackedScene" uid="uid://b4b7jpeikp2dd" path="res://sheep.tscn" id="5_aju5t"]
+[ext_resource type="Texture2D" uid="uid://clgouhfnosfdt" path="res://Textbox.png" id="5_beass"]
 [ext_resource type="Script" path="res://Ground4.gd" id="5_u0cpa"]
+[ext_resource type="FontFile" uid="uid://br7xn48vvnypb" path="res://slkscr - Copy.ttf" id="6_lc5yv"]
 [ext_resource type="Script" path="res://Ground5.gd" id="6_rbfv5"]
 [ext_resource type="Script" path="res://Ground6.gd" id="7_nkmqw"]
+[ext_resource type="Script" path="res://dialogue.gd" id="7_y1jwl"]
 [ext_resource type="Script" path="res://Ground7.gd" id="8_gs2d7"]
+[ext_resource type="Texture2D" uid="uid://bui3uqucek07s" path="res://player nimations/ezgif.com-animated-gif-maker (1) (1).png" id="8_pwihp"]
 [ext_resource type="Script" path="res://Ground8.gd" id="9_gio5g"]
+[ext_resource type="Texture2D" uid="uid://c7nal6xk41gnp" path="res://player nimations/ezgif.com-animated-gif-maker (1) (8).png" id="9_tcpu7"]
+[ext_resource type="Texture2D" uid="uid://bxsdqpc0sx8xq" path="res://player nimations/New Piskel (9).png" id="10_5ynje"]
 [ext_resource type="Script" path="res://Ground9.gd" id="10_nfsfr"]
+[ext_resource type="AudioStream" uid="uid://j4k6k545gn7t" path="res://story/wasd m1 master.wav" id="11_bwuy7"]
+[ext_resource type="AudioStream" uid="uid://b5r08t2fi7pms" path="res://story/wasd m1 master2.wav" id="12_hgle2"]
+[ext_resource type="AudioStream" uid="uid://ckb5reytncy8x" path="res://story/Tutorial2.wav" id="13_uvgjo"]
+[ext_resource type="AudioStream" uid="uid://xnb0w0g1mswy" path="res://story/Tutorial3.wav" id="14_y1826"]
+[ext_resource type="AudioStream" uid="uid://dtvr0gwlsidog" path="res://story/Tutorial4.wav" id="15_rritb"]
+[ext_resource type="AudioStream" uid="uid://c81y8yl00xnih" path="res://story/Tutorial5.wav" id="16_kird3"]
+[ext_resource type="AudioStream" uid="uid://gxk73n4ni5qm" path="res://story/Tutorial6.wav" id="17_kyiu3"]
+[ext_resource type="AudioStream" uid="uid://c7hfijip7x5aw" path="res://music/1.mp3" id="17_pdhfl"]
+[ext_resource type="AudioStream" uid="uid://dk1nw1a3jn7j4" path="res://music/2.mp3" id="18_alnou"]
+[ext_resource type="AudioStream" uid="uid://gagyl0haxe2f" path="res://story/Tutorial7.wav" id="18_lccd7"]
+[ext_resource type="AudioStream" uid="uid://cyrckuapcwxry" path="res://music/3.mp3" id="19_axmxy"]
+[ext_resource type="AudioStream" uid="uid://snf4u0fbt45v" path="res://story/Tutorial8.wav" id="19_gthgj"]
+[ext_resource type="AudioStream" uid="uid://7ixtt66om7g" path="res://music/4.mp3" id="20_3y2hi"]
+[ext_resource type="AudioStream" uid="uid://dus7b7jw3akua" path="res://story/Tutorial9.wav" id="20_c8rpi"]
+[ext_resource type="AudioStream" uid="uid://chlvjfwe4g1va" path="res://music/5.mp3" id="21_iua5y"]
+[ext_resource type="AudioStream" uid="uid://jaqjfxdodsqf" path="res://story/Tutorial10.wav" id="21_xdsf0"]
+[ext_resource type="AudioStream" uid="uid://cwubbfbn1gnav" path="res://story/Tutorial11.wav" id="22_c4ecw"]
+[ext_resource type="AudioStream" uid="uid://spkhbc1xk4vk" path="res://music/6.mp3" id="22_vtfva"]
+[ext_resource type="AudioStream" uid="uid://ctio38sgbitys" path="res://music/7.mp3" id="23_jgiuj"]
+[ext_resource type="Script" path="res://Label.gd" id="23_qm8w4"]
+[ext_resource type="AudioStream" uid="uid://b3jb0syi4q77u" path="res://music/8.mp3" id="24_a8h7x"]
+[ext_resource type="AudioStream" uid="uid://goaiecrs231n" path="res://voicelines/lelpaso/Dogman voicelines2.wav" id="24_f7kvm"]
+[ext_resource type="AudioStream" uid="uid://dixe1yutepcfy" path="res://voicelines/lelpaso/Dogman voicelines4.wav" id="25_82ur6"]
+[ext_resource type="AudioStream" uid="uid://t3pydxel1id7" path="res://music/9.mp3" id="25_tjh5e"]
+[ext_resource type="AudioStream" uid="uid://bd6ub2xr4wrpl" path="res://voicelines/lelpaso/Dogman voicelines5.wav" id="26_5ckes"]
+[ext_resource type="AudioStream" uid="uid://cgmgoratvh3hm" path="res://voicelines/lelpaso/Dogman voicelines6.wav" id="27_j5oiv"]
+[ext_resource type="AudioStream" uid="uid://c3xndhm6eoik" path="res://voicelines/lelpaso/Dogman voicelines7.wav" id="28_tlmvd"]
+[ext_resource type="AudioStream" uid="uid://dqcspxrjqsde1" path="res://voicelines/lelpaso/Dogman voicelines8.wav" id="29_amm7r"]
+[ext_resource type="AudioStream" uid="uid://dlu7d35ld1bqw" path="res://voicelines/lelpaso/Dogman voicelines9.wav" id="30_xp8wi"]
+[ext_resource type="AudioStream" uid="uid://bqcxsw2q6wmg7" path="res://voicelines/lelpaso/Dogman voicelines10.wav" id="31_stqdm"]
+[ext_resource type="AudioStream" uid="uid://bakmck70r3ox1" path="res://voicelines/lelpaso/Dogman voicelines11.wav" id="32_8snm5"]
+[ext_resource type="AudioStream" uid="uid://c2wvxuml7n506" path="res://voicelines/lelpaso/Dogman voicelines12.wav" id="33_gu2of"]
+[ext_resource type="AudioStream" uid="uid://du0wc6f5djif0" path="res://voicelines/lelpaso/Dogman voicelines13.wav" id="34_dolsw"]
+[ext_resource type="AudioStream" uid="uid://cwqkwqbefw1oj" path="res://voicelines/lelpaso/Dogman voicelines14.wav" id="35_t4b51"]
+[ext_resource type="AudioStream" uid="uid://dhe7d2adkq8jk" path="res://voicelines/lelpaso/Dogman voicelines15.wav" id="36_fw6md"]
+[ext_resource type="AudioStream" uid="uid://ux2b7moowjjn" path="res://voicelines/lelpaso/Dogman voicelines16.wav" id="37_yitqm"]
+[ext_resource type="AudioStream" uid="uid://dg2gvwpy8ec3e" path="res://voicelines/lelpaso/Dogman voicelines17.wav" id="38_e171t"]
+[ext_resource type="AudioStream" uid="uid://bbkf4ih3t0llt" path="res://voicelines/lelpaso/Dogman voicelines18.wav" id="39_r5fpy"]
+[ext_resource type="AudioStream" uid="uid://cfeysp7dai5h2" path="res://voicelines/master/master vc1.wav" id="40_hglwn"]
+[ext_resource type="AudioStream" uid="uid://c7ldso46gs5wd" path="res://voicelines/master/Master2.wav" id="41_2cjxk"]
+[ext_resource type="AudioStream" uid="uid://bum31mpba6c0w" path="res://voicelines/master/Master3.wav" id="42_1cvui"]
+[ext_resource type="AudioStream" uid="uid://cykj1wt2h22tl" path="res://voicelines/master/Master4.wav" id="43_dp6tq"]
+[ext_resource type="AudioStream" uid="uid://dbgb8egak18s6" path="res://voicelines/master/Master5.wav" id="44_kcxen"]
+[ext_resource type="AudioStream" uid="uid://dcw6mhgfsqvtm" path="res://voicelines/master/Master6.wav" id="45_yet7n"]
+[ext_resource type="AudioStream" uid="uid://c5hq1hfwbg21o" path="res://voicelines/master/Master7.wav" id="46_kk5t4"]
+[ext_resource type="AudioStream" uid="uid://bqacc18ycdsgu" path="res://voicelines/master/Master8.wav" id="47_3ym13"]
+[ext_resource type="AudioStream" uid="uid://c1ife6aewbb5w" path="res://voicelines/master/Master9.wav" id="48_j6bow"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_x8pnm"]
 render_priority = 0
@@ -22,6 +76,210 @@ shader = ExtResource("2_vymal")
 
 [sub_resource type="QuadMesh" id="QuadMesh_4wjeb"]
 material = SubResource("ShaderMaterial_x8pnm")
+
+[sub_resource type="LabelSettings" id="LabelSettings_l4kb2"]
+font = ExtResource("6_lc5yv")
+font_size = 30
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lndnh"]
+atlas = ExtResource("8_pwihp")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b8lux"]
+atlas = ExtResource("8_pwihp")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rgwoj"]
+atlas = ExtResource("8_pwihp")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n2gf8"]
+atlas = ExtResource("8_pwihp")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_juqv5"]
+atlas = ExtResource("8_pwihp")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_me6ik"]
+atlas = ExtResource("8_pwihp")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvm5t"]
+atlas = ExtResource("8_pwihp")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jqq7"]
+atlas = ExtResource("8_pwihp")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rcy1b"]
+atlas = ExtResource("8_pwihp")
+region = Rect2(128, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m87l3"]
+atlas = ExtResource("8_pwihp")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_atekp"]
+atlas = ExtResource("9_tcpu7")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bswx4"]
+atlas = ExtResource("9_tcpu7")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_450t5"]
+atlas = ExtResource("9_tcpu7")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q1iax"]
+atlas = ExtResource("9_tcpu7")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k2ovo"]
+atlas = ExtResource("9_tcpu7")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3obqh"]
+atlas = ExtResource("9_tcpu7")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oi2yr"]
+atlas = ExtResource("9_tcpu7")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ps5h"]
+atlas = ExtResource("9_tcpu7")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msijs"]
+atlas = ExtResource("9_tcpu7")
+region = Rect2(128, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0wrca"]
+atlas = ExtResource("9_tcpu7")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bne4i"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lndnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b8lux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rgwoj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n2gf8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_juqv5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_me6ik")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vvm5t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jqq7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rcy1b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m87l3")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_atekp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bswx4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_450t5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q1iax")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k2ovo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3obqh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oi2yr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ps5h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_msijs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0wrca")
+}],
+"loop": true,
+"name": &"new_animation_1",
+"speed": 20.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5olp6"]
+atlas = ExtResource("10_5ynje")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wcfrq"]
+atlas = ExtResource("10_5ynje")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dkr4"]
+atlas = ExtResource("10_5ynje")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_smjft"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5olp6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wcfrq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dkr4")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 12.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vvp4f"]
+font = ExtResource("5_524eq")
+font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_80r85"]
+font = ExtResource("5_524eq")
+font_size = 50
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_li88l"]
 vertices = PackedVector3Array(-2.25, 1.5, -4.75, -1.75, 1.5, -4, -1.75, 1.5, -5.75, -2.25, 1.5, -4.75, -1.75, 1.5, -5.75, -2.5, 1.5, -6, -3.75, 1.5, -4.5, -4.25, 1.5, -4, -4, 1.5, -2.75, -3.75, 1.5, -2.75, -3.75, 1.5, -4.5, -9.5, 1.5, -3.5, -6, 1.5, -3.5, -5.75, 1.5, -4, -4.5, 1.5, -8, -4.5, 1.5, -9.5, -9.5, 1.5, -9.5, -5.75, 1.5, -4, -4.25, 1.5, -4, -3.75, 1.5, -4.5, -2.5, 1.5, -6, -2.5, 1.5, -8, -4.5, 1.5, -8, 9.25, 1.5, -1.90735e-06, 9.25, 1.5, 0.749998, 9.5, 1.5, 0.749998, 9.5, 1.5, -4.5, 6.75, 1.5, -6.5, 6.75, 1.5, -7.75, 5.75, 1.5, -6.25, -2, 1.5, -9.5, -2, 1.5, -9, -0.750002, 1.5, -9, 4, 1.5, -9.5, -0.750002, 1.5, -9, -0.500002, 1.5, -8.25, 0.249998, 1.5, -8, 7.5, 1.5, -6.25, 6.75, 1.5, -6.5, 5.75, 1.5, -6.25, 7.5, 1.5, -4.5, 3.25, 1.5, -4, 3.75, 1.5, -3.25, 5, 1.5, -3.25, 3.5, 1.5, -5.5, 5, 1.5, -3.25, 6, 1.5, -2.25, 7, 1.5, -2.25, 3, 1.5, -6.25, 4.25, 1.5, -6.25, 4, 1.5, -9.5, -0.750002, 1.5, -9, 0.249998, 1.5, -8, 3, 1.5, -6.25, 3.5, 1.5, -5.5, 4.25, 1.5, -6.25, 7, 1.5, -2.25, 7.25, 1.5, -1.5, 9.25, 1.5, -1.90735e-06, 9.5, 1.5, -4.5, 7.5, 1.5, -4.5, 0.249998, 1.5, -8, 0.249998, 1.5, -6.25, 3, 1.5, -6.25, 7.5, 1.5, -4.5, 5.75, 1.5, -6.25, 4.25, 1.5, -6.25, 3.5, 1.5, -5.5, 5, 1.5, -3.25, 7, 1.5, -2.25, 8.75, 1.5, -9, 9.5, 1.5, -8.75, 9.5, 1.5, -9.5, 8.75, 1.5, -9.5, 3.25, 1.5, -3, 3.75, 1.5, -3.25, 3.25, 1.5, -4, -9.5, 1.5, 4.25, -8.75, 1.5, 4.25, -8.75, 1.5, 3.25, 1.5, 1.5, 2.5, 2.25, 1.5, 1.5, 1.75, 1.5, 1.25, 0.499998, 1.5, 1.25, -8.75, 1.5, 3.25, -7.25, 1.5, 1.5, -6.5, 1.5, -1.90735e-06, -4, 1.5, -1, -4.75, 1.5, -0.750002, -5, 1.5, -1.90735e-06, -3.25, 1.5, 0.499998, -2, 1.5, 2.25, -1.25, 1.5, 2, -1, 1.5, 1.25, -1.5, 1.5, 0.749998, -3.25, 1.5, 0.499998, -0.500002, 1.5, -0.250002, -1.25, 1.5, -1.90735e-06, -1.5, 1.5, 0.749998, -1, 1.5, 1.25, 0.499998, 1.5, 1.25, -3.75, 1.5, -2.75, -4, 1.5, -2.75, -4, 1.5, -1, -3.25, 1.5, 0.499998, -7.25, 1.5, 1.5, -5.75, 1.5, 1.5, -6.5, 1.5, -1.90735e-06, -6.5, 1.5, -1.90735e-06, -6.75, 1.5, -3, -9.5, 1.5, -3.5, -9.5, 1.5, 4.25, -8.75, 1.5, 3.25, -1.25, 1.5, -3.5, -1.25, 1.5, -2, -0.500002, 1.5, -1.75, -1.90735e-06, 1.5, -3.5, 1.75, 1.5, 1.25, 1.75, 1.5, -1.75, -0.500002, 1.5, -1.75, -0.500002, 1.5, -0.250002, 0.499998, 1.5, 1.25, 1.75, 1.5, -1.75, 3.25, 1.5, -2, 3.25, 1.5, -3, -8.75, 1.5, 3.25, -7.5, 1.5, 3, -7.25, 1.5, 1.5, -3.25, 1.5, 4.25, -1.75, 1.5, 4, -2, 1.5, 2.25, 0.249998, 1.5, -4.25, -1.90735e-06, 1.5, -3.5, -0.500002, 1.5, -1.75, 1.75, 1.5, -1.75, 3.25, 1.5, -3, 3.25, 1.5, -4, -5.75, 1.5, 1.5, -3.25, 1.5, 4.25, -2, 1.5, 2.25, -3.25, 1.5, 0.499998, -5, 1.5, -1.90735e-06, -6.5, 1.5, -1.90735e-06, -6.75, 1.5, -3, -6, 1.5, -3.5, -9.5, 1.5, -3.5, 1.5, 1.5, 2.5, 1.5, 1.5, 3.25, 2, 1.5, 2.75, 4.25, 1.5, 5, 3.25, 1.5, 5.25, 3.25, 1.5, 5.5, 4.75, 1.5, 5.5, 6.25, 1.5, 1.75, 4.25, 1.5, 3.5, 4.75, 1.5, 5.5, 7.25, 1.5, 7.75, 9.5, 1.5, 9.5, 9, 1.5, 1.75, 9.5, 1.5, 0.749998, 9.25, 1.5, 0.749998, 9, 1.5, 1.75, 9.5, 1.5, 9.5, 2.25, 1.5, 1.5, 1.5, 1.5, 2.5, 2, 1.5, 2.75, 3.25, 1.5, 2.75, 3.5, 1.5, 1.5, 4.75, 1.5, 5.5, 5.75, 1.5, 7, 7.25, 1.5, 7.75, 7.25, 1.5, 7.75, 7.75, 1.5, 9.5, 9.5, 1.5, 9.5, 4.25, 1.5, 3.5, 4.25, 1.5, 5, 4.75, 1.5, 5.5, 3.5, 1.5, 1.5, 3.25, 1.5, 2.75, 4.25, 1.5, 3.5, 6.25, 1.5, 1.75, 6, 1.5, 0.249998, 4.5, 1.5, -1.90735e-06, 3, 1.5, 6.25, 3.25, 1.5, 5.5, 3.25, 1.5, 5.25, 2.25, 1.5, 5.25, 2, 1.5, 6, 2.25, 1.5, 6.5, -5.75, 1.5, 6.25, -6.25, 1.5, 5, -7, 1.5, 6.25, -1, 1.5, 6, -3.25, 1.5, 5.5, -4.25, 1.5, 6.25, -2.75, 1.5, 9.5, 4, 1.5, 9.5, 2.25, 1.5, 8, -4.25, 1.5, 6.25, -5.75, 1.5, 6.25, -2.75, 1.5, 9.5, -5.75, 1.5, 6.25, -7, 1.5, 6.25, -9.5, 1.5, 9.5, -2.75, 1.5, 9.5, 2.25, 1.5, 8, 2.25, 1.5, 6.5, 2, 1.5, 6, -1, 1.5, 6, -1.75, 1.5, 4, -3.25, 1.5, 4.25, -3.25, 1.5, 5.5, -1, 1.5, 6, -1, 1.5, 4, -7, 1.5, 6.25, -8.5, 1.5, 6.25, -9.5, 1.5, 9.5, -8.5, 1.5, 6.25, -8.75, 1.5, 4.25, -9.5, 1.5, 4.25, -9.5, 1.5, 9.5, 4, 1.5, 9.5, 3.75, 1.5, 8.25, 2.25, 1.5, 8)
@@ -82,11 +340,265 @@ script = ExtResource("2_6grhr")
 [node name="CameraPivot" type="Marker3D" parent="playerfollow"]
 
 [node name="Camera3D" type="Camera3D" parent="playerfollow/CameraPivot"]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 8, 20)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 2, 2)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="playerfollow/CameraPivot/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, -0.1, -0.1)
 mesh = SubResource("QuadMesh_4wjeb")
+
+[node name="dialogue" type="Control" parent="playerfollow/CameraPivot/Camera3D"]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+position = Vector2(-337, -130)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_beass")
+
+[node name="Label" type="Label" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+layout_mode = 0
+offset_left = -504.0
+offset_top = -157.0
+offset_right = -26.0
+offset_bottom = -29.0
+label_settings = SubResource("LabelSettings_l4kb2")
+autowrap_mode = 2
+script = ExtResource("7_y1jwl")
+
+[node name="lelpaso" type="AnimatedSprite2D" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+visible = false
+position = Vector2(-584, -90)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_bne4i")
+animation = &"new_animation_1"
+autoplay = "new_animation_1"
+frame_progress = 0.804538
+
+[node name="master" type="AnimatedSprite2D" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+visible = false
+position = Vector2(-583, -95)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_smjft")
+animation = &"new_animation"
+autoplay = "new_animation"
+frame_progress = 0.824392
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+stream = ExtResource("11_bwuy7")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+stream = ExtResource("12_hgle2")
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+stream = ExtResource("13_uvgjo")
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+stream = ExtResource("14_y1826")
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+stream = ExtResource("15_rritb")
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+stream = ExtResource("16_kird3")
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+stream = ExtResource("17_kyiu3")
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+stream = ExtResource("18_lccd7")
+
+[node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+stream = ExtResource("19_gthgj")
+
+[node name="AudioStreamPlayer10" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+stream = ExtResource("20_c8rpi")
+
+[node name="AudioStreamPlayer11" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+stream = ExtResource("21_xdsf0")
+
+[node name="AudioStreamPlayer12" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue"]
+stream = ExtResource("22_c4ecw")
+
+[node name="Label" type="Label" parent="playerfollow/CameraPivot/Camera3D"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -124.0
+offset_bottom = 83.0
+grow_horizontal = 0
+label_settings = SubResource("LabelSettings_vvp4f")
+horizontal_alignment = 2
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="playerfollow/CameraPivot/Camera3D"]
+offset_right = 124.0
+offset_bottom = 83.0
+label_settings = SubResource("LabelSettings_vvp4f")
+horizontal_alignment = 2
+autowrap_mode = 2
+
+[node name="Label3" type="Label" parent="playerfollow/CameraPivot/Camera3D"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -197.5
+offset_top = -147.5
+offset_right = 197.5
+offset_bottom = 147.5
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_80r85")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="dialogue2" type="Control" parent="playerfollow/CameraPivot/Camera3D"]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+position = Vector2(243, -100)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("5_beass")
+
+[node name="Label" type="Label" parent="playerfollow/CameraPivot/Camera3D/dialogue2" groups=["voiceline"]]
+layout_mode = 0
+offset_left = 126.0
+offset_top = -118.0
+offset_right = 1083.0
+offset_bottom = 133.0
+scale = Vector2(0.35, 0.35)
+label_settings = SubResource("LabelSettings_l4kb2")
+autowrap_mode = 2
+script = ExtResource("23_qm8w4")
+
+[node name="master" type="AnimatedSprite2D" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+visible = false
+position = Vector2(68, -75)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_smjft")
+animation = &"new_animation"
+autoplay = "new_animation"
+frame_progress = 0.516177
+
+[node name="lelpaso" type="AnimatedSprite2D" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+visible = false
+position = Vector2(72, -75)
+scale = Vector2(1.7, 1.7)
+sprite_frames = SubResource("SpriteFrames_bne4i")
+animation = &"new_animation_1"
+autoplay = "new_animation_1"
+frame_progress = 0.955251
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("24_f7kvm")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("25_82ur6")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("26_5ckes")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("27_j5oiv")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("28_tlmvd")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("29_amm7r")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("30_xp8wi")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("31_stqdm")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("32_8snm5")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer10" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("33_gu2of")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer11" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("34_dolsw")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer12" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("35_t4b51")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer13" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("36_fw6md")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer14" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("37_yitqm")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer15" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("38_e171t")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer16" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("39_r5fpy")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer17" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("40_hglwn")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer18" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("41_2cjxk")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer19" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("42_1cvui")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer20" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("43_dp6tq")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer21" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("44_kcxen")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer22" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("45_yet7n")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer23" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("46_kk5t4")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer24" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("47_3ym13")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer25" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
+stream = ExtResource("48_j6bow")
+volume_db = -5.0
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="playerfollow"]
 transform = Transform3D(-0.75, 0.65974, 0.0473672, -0.595035, -0.704247, 0.387259, 0.288849, 0.262259, 0.920753, 0, 4, 4)
@@ -3095,6 +3607,47 @@ transform = Transform3D(0.0997021, 0, 0.0997021, 0, 0.141, 0, -0.0997021, 0, 0.0
 
 [node name="Timer" type="Timer" parent="."]
 
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 100.0
+one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_pdhfl")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_alnou")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19_axmxy")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("20_3y2hi")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_iua5y")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22_vtfva")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("23_jgiuj")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24_a8h7x")
+volume_db = -5.0
+
+[node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25_tjh5e")
+volume_db = -5.0
+
+[connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="body_entered" from="Ground/Ground/Area3D" to="Ground/Ground" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="Ground2/Ground2/Area3D" to="Ground2/Ground2" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="Ground3/Ground3/Area3D" to="Ground3/Ground3" method="_on_area_3d_body_entered"]
@@ -3105,3 +3658,4 @@ transform = Transform3D(0.0997021, 0, 0.0997021, 0, 0.141, 0, -0.0997021, 0, 0.0
 [connection signal="body_entered" from="Ground8/Ground8/Area3D" to="Ground8/Ground8" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="Ground9/Ground9/Area3D" to="Ground9/Ground9" method="_on_area_3d_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]

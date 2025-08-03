@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cfeysp7dai5h2"
+path="res://.godot/imported/master vc1.wav-b48fc6eb3a73ab50011e7df9ab0c209f.sample"
+
+[deps]
+
+source_file="res://voicelines/master/master vc1.wav"
+dest_files=["res://.godot/imported/master vc1.wav-b48fc6eb3a73ab50011e7df9ab0c209f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
