@@ -10,6 +10,7 @@ var waitForTimer = false
 var dir = Vector3.ZERO
 var fall_acceleration = 25
 var falling = false
+var score = 100
 
 
 
@@ -28,8 +29,10 @@ func _physics_process(delta):
 	
 	if velocity.x > 0:
 		$Pivot/AnimatedSprite3D.rotation.y = PI
+		$Pivot/AnimatedSprite3D2.rotation.y = PI
 	elif velocity.x < 0:
 		$Pivot/AnimatedSprite3D.rotation.y = 0
+		$Pivot/AnimatedSprite3D2.rotation.y = 0
 	
 	
 	if not waitForTimer:
@@ -75,8 +78,10 @@ func _physics_process(delta):
 	
 	if velocity < Vector3(0.1,0,0.1) and velocity > Vector3(-0.1,0,-0.1):
 		$Pivot/AnimatedSprite3D.play("default")
+		$Pivot/AnimatedSprite3D2.play("default1")
 	else:
 		$Pivot/AnimatedSprite3D.play("new_animation")
+		$Pivot/AnimatedSprite3D2.play("new_animation1")
 	move_and_slide()
 	
 	
@@ -99,7 +104,23 @@ func _on_timer_timeout():
 	
 
 
+func boostsheep():
+	score += 1000
+	print("BOOSTED")
+	$Pivot/AnimatedSprite3D.visible = false
+	$Pivot/AnimatedSprite3D2.visible = true
 
 
 
+func _on_hitbox_area_entered(area):
+	if area.is_in_group("attack"):
+		nav.target_position = Playerauto.playerposition
+		$Timer3.start(1.3)
 
+
+func _on_timer_3_timeout():
+	print("Im caught")
+	get_tree().call_group("main", "spawnSheep")
+	Playerauto.score += score
+	print(Playerauto.score)
+	get_parent().remove_child(self)

@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://b4b7jpeikp2dd"]
+[gd_scene load_steps=21 format=3 uid="uid://b4b7jpeikp2dd"]
 
 [ext_resource type="Script" path="res://Sheep.gd" id="1_4vsd7"]
 [ext_resource type="Texture2D" uid="uid://b0o467qh8tk7q" path="res://sheep nimations/white sheep run.png" id="2_tf4ps"]
+[ext_resource type="Texture2D" uid="uid://b14x6saqya70p" path="res://sheep nimations/New Piskel (8).png" id="3_6kyxy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lxnbb"]
 atlas = ExtResource("2_tf4ps")
@@ -58,6 +59,61 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ioqdm"]
+atlas = ExtResource("3_6kyxy")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rh5cc"]
+atlas = ExtResource("3_6kyxy")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0af3q"]
+atlas = ExtResource("3_6kyxy")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o0cva"]
+atlas = ExtResource("3_6kyxy")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_084aw"]
+atlas = ExtResource("3_6kyxy")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asqn5"]
+atlas = ExtResource("3_6kyxy")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vww3s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ioqdm")
+}],
+"loop": true,
+"name": &"default1",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rh5cc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0af3q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o0cva")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_084aw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asqn5")
+}],
+"loop": true,
+"name": &"new_animation1",
+"speed": 12.0
+}]
+
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qi8n2"]
 radius = 0.25
 height = 1.5
@@ -65,6 +121,8 @@ height = 1.5
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_xnhkb"]
 height = 1.0
 radius = 6.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_e33o1"]
 
 [node name="Sheep" type="CharacterBody3D" groups=["boid"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
@@ -78,6 +136,13 @@ alpha_cut = 1
 sprite_frames = SubResource("SpriteFrames_bvjje")
 animation = &"new_animation"
 frame_progress = 0.931756
+
+[node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="Pivot"]
+visible = false
+shaded = true
+alpha_cut = 1
+sprite_frames = SubResource("SpriteFrames_vww3s")
+animation = &"new_animation1"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
@@ -100,7 +165,17 @@ radius = 0.5
 [node name="Timer2" type="Timer" parent="."]
 wait_time = 3.0
 
+[node name="hitbox" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="hitbox"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+shape = SubResource("CapsuleShape3D_e33o1")
+
+[node name="Timer3" type="Timer" parent="."]
+
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="body_entered" from="Vision" to="." method="_on_vision_body_entered"]
 [connection signal="body_exited" from="Vision" to="." method="_on_vision_body_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]
+[connection signal="timeout" from="Timer3" to="." method="_on_timer_3_timeout"]

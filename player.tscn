@@ -684,7 +684,7 @@ shape = SubResource("CapsuleShape3D_s0wja")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 radius = 2.0
 
-[node name="attack" type="Area3D" parent="."]
+[node name="attack" type="Area3D" parent="." groups=["attack"]]
 visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="attack"]

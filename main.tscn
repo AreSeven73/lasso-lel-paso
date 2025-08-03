@@ -82,7 +82,7 @@ script = ExtResource("2_6grhr")
 [node name="CameraPivot" type="Marker3D" parent="playerfollow"]
 
 [node name="Camera3D" type="Camera3D" parent="playerfollow/CameraPivot"]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 2, 2)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 8, 20)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="playerfollow/CameraPivot/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, -0.1, -0.1)
@@ -3093,6 +3093,8 @@ transform = Transform3D(0.0997021, 0, -0.099702, 0, 0.141, 0, 0.099702, 0, 0.099
 [node name="Block742" parent="Ground9/Ground9/environment" instance=ExtResource("2_hppe4")]
 transform = Transform3D(0.0997021, 0, 0.0997021, 0, 0.141, 0, -0.0997021, 0, 0.0997021, -18, -0.2, 0)
 
+[node name="Timer" type="Timer" parent="."]
+
 [connection signal="body_entered" from="Ground/Ground/Area3D" to="Ground/Ground" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="Ground2/Ground2/Area3D" to="Ground2/Ground2" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="Ground3/Ground3/Area3D" to="Ground3/Ground3" method="_on_area_3d_body_entered"]
@@ -3102,3 +3104,4 @@ transform = Transform3D(0.0997021, 0, 0.0997021, 0, 0.141, 0, -0.0997021, 0, 0.0
 [connection signal="body_entered" from="Ground7/Ground7/Area3D" to="Ground7/Ground7" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="Ground8/Ground8/Area3D" to="Ground8/Ground8" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="Ground9/Ground9/Area3D" to="Ground9/Ground9" method="_on_area_3d_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
