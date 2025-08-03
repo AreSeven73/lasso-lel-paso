@@ -72,4 +72,10 @@ func _physics_process(delta):
 		target_velocity.y = target_velocity.y - (fall_acceleration * delta)
 	
 	velocity = target_velocity
+	Playerauto.playerposition = position
 	move_and_slide()
+	
+
+	
+
+

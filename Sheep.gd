@@ -9,6 +9,7 @@ var trgt = Vector2.ZERO
 var waitForTimer = false
 var dir = Vector3.ZERO
 var fall_acceleration = 25
+var falling = false
 
 
 
@@ -17,10 +18,7 @@ var fall_acceleration = 25
 
 
 
-func _onready():
-	position.x = randi_range(-16,16)
-	position.z = randi_range(-16,16)
-	position.y = randi_range(3,4)
+
 
 
 # the stupid physics stuff
@@ -48,7 +46,7 @@ func _physics_process(delta):
 		possiblePositions.erase(Vector2(position.x, position.z))
 			
 		trgt = possiblePositions.pick_random()
-		print(trgt)
+		
 		nav.target_position = Vector3(trgt.x, 0, trgt.y)
 		$Timer.start()
 		
@@ -65,6 +63,14 @@ func _physics_process(delta):
 	
 	if not is_on_floor():
 		velocity.y = velocity.y - (fall_acceleration * delta)
+		if position.y < -1:
+			print("I fell")
+			get_tree().call_group("main", "spawnSheep")
+			get_parent().remove_child(self)
+		
+	else:
+		velocity.y = 0
+		
 	
 	
 	if velocity < Vector3(0.1,0,0.1) and velocity > Vector3(-0.1,0,-0.1):
@@ -91,3 +97,9 @@ func _on_vision_body_exited(body):
 func _on_timer_timeout():
 	waitForTimer = false
 	
+
+
+
+
+
+
