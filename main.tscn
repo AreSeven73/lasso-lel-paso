@@ -502,103 +502,103 @@ frame_progress = 0.955251
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("24_f7kvm")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("25_82ur6")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("26_5ckes")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("27_j5oiv")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("28_tlmvd")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("29_amm7r")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("30_xp8wi")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("31_stqdm")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("32_8snm5")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer10" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("33_gu2of")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer11" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("34_dolsw")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer12" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("35_t4b51")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer13" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("36_fw6md")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer14" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("37_yitqm")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer15" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("38_e171t")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer16" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("39_r5fpy")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer17" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("40_hglwn")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer18" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("41_2cjxk")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer19" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("42_1cvui")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer20" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("43_dp6tq")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer21" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("44_kcxen")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer22" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("45_yet7n")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer23" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("46_kk5t4")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer24" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("47_3ym13")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="AudioStreamPlayer25" type="AudioStreamPlayer" parent="playerfollow/CameraPivot/Camera3D/dialogue2"]
 stream = ExtResource("48_j6bow")
-volume_db = -5.0
+volume_db = -2.0
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="playerfollow"]
 transform = Transform3D(-0.75, 0.65974, 0.0473672, -0.595035, -0.704247, 0.387259, 0.288849, 0.262259, 0.920753, 0, 4, 4)

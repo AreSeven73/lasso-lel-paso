@@ -26,6 +26,9 @@ var boosted = false
 # the stupid physics stuff
 func _physics_process(delta):
 	
+	if randi_range(1,10000) == 10:
+		$AudioStreamPlayer3D.play()
+	
 	var direction = Vector2()
 	
 	if velocity.x > 0:

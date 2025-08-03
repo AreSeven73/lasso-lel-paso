@@ -22,6 +22,7 @@ func _physics_process(delta):
 	if not attacking:
 		if Input.is_action_pressed("action"):
 			attacking = true
+			$AudioStreamPlayer.play()
 			#velocity.x = 0
 			#velocity.z = 0
 			$Timer.start(1.6)

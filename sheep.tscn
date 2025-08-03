@@ -1,8 +1,11 @@
-[gd_scene load_steps=21 format=3 uid="uid://b4b7jpeikp2dd"]
+[gd_scene load_steps=25 format=3 uid="uid://b4b7jpeikp2dd"]
 
 [ext_resource type="Script" path="res://Sheep.gd" id="1_4vsd7"]
 [ext_resource type="Texture2D" uid="uid://b0o467qh8tk7q" path="res://sheep nimations/white sheep run.png" id="2_tf4ps"]
 [ext_resource type="Texture2D" uid="uid://b14x6saqya70p" path="res://sheep nimations/New Piskel (8).png" id="3_6kyxy"]
+[ext_resource type="AudioStream" uid="uid://c4kaculnkpd4n" path="res://sheep bleats/Baa2.wav" id="4_s7qng"]
+[ext_resource type="AudioStream" uid="uid://cit3fcytytryv" path="res://sheep bleats/Baa3.wav" id="5_g6i0x"]
+[ext_resource type="AudioStream" uid="uid://b52ahdc6u4mt4" path="res://sheep bleats/Baa.wav" id="6_udhb5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lxnbb"]
 atlas = ExtResource("2_tf4ps")
@@ -124,6 +127,15 @@ radius = 6.0
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_e33o1"]
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_w0c2c"]
+streams_count = 3
+stream_0/stream = ExtResource("4_s7qng")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("5_g6i0x")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("6_udhb5")
+stream_2/weight = 1.0
+
 [node name="Sheep" type="CharacterBody3D" groups=["boid"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
 script = ExtResource("1_4vsd7")
@@ -172,6 +184,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
 shape = SubResource("CapsuleShape3D_e33o1")
 
 [node name="Timer3" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = SubResource("AudioStreamRandomizer_w0c2c")
+volume_db = -10.0
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="body_entered" from="Vision" to="." method="_on_vision_body_entered"]

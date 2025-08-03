@@ -1,9 +1,13 @@
-[gd_scene load_steps=95 format=3 uid="uid://mb861kdv4268"]
+[gd_scene load_steps=100 format=3 uid="uid://mb861kdv4268"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_htg8l"]
 [ext_resource type="Texture2D" uid="uid://cxv75asvuj4t7" path="res://player nimations/dogman walk.png" id="2_1sy16"]
 [ext_resource type="Texture2D" uid="uid://ccs80nxukp56n" path="res://player nimations/east lasso.png" id="3_jh8ed"]
 [ext_resource type="Texture2D" uid="uid://7v0eb2yuktyj" path="res://player nimations/north lasso.png" id="4_ky0vf"]
+[ext_resource type="AudioStream" uid="uid://gte4tv1bre7v" path="res://lasso/mixed-whip-crack-1-2.wav" id="5_dmf1a"]
+[ext_resource type="AudioStream" uid="uid://bjynwqqh3tihk" path="res://lasso/mixed-whip-crack-1-102825.wav" id="6_wocqm"]
+[ext_resource type="AudioStream" uid="uid://bxfeed57fugkk" path="res://lasso/whip-02-2.wav" id="7_66whe"]
+[ext_resource type="AudioStream" uid="uid://l5nv50tt4esq" path="res://lasso/whip-02-242215.wav" id="8_5gvll"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_82ht4"]
 atlas = ExtResource("2_1sy16")
@@ -665,6 +669,17 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_suybj"]
+streams_count = 4
+stream_0/stream = ExtResource("5_dmf1a")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("6_wocqm")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("7_66whe")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("8_5gvll")
+stream_3/weight = 1.0
+
 [node name="Player" type="CharacterBody3D" groups=["player"]]
 script = ExtResource("1_htg8l")
 
@@ -709,5 +724,8 @@ sprite_frames = SubResource("SpriteFrames_mvtmy")
 animation = &"lasso north"
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_suybj")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
