@@ -16,7 +16,7 @@ func _process(delta):
 	$playerfollow/CameraPivot/Camera3D/Label.text = str(Playerauto.score)
 	$playerfollow/CameraPivot/Camera3D/Label2.text = str(snapped($Timer2.time_left, 1))
 	if not waiting:
-		$Timer.start(randi_range(1, 8))
+		$Timer.start(randi_range(1, 12))
 		waiting = true
 		
 	if not ($AudioStreamPlayer.playing or $AudioStreamPlayer2.playing or $AudioStreamPlayer3.playing or $AudioStreamPlayer4.playing or $AudioStreamPlayer5.playing or $AudioStreamPlayer6.playing or $AudioStreamPlayer7.playing or $AudioStreamPlayer8.playing or $AudioStreamPlayer9.playing):

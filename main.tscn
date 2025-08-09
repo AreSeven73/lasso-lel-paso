@@ -823,7 +823,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, -1, 21)
 navigation_mesh = SubResource("NavigationMesh_li88l")
 
 [node name="Ground" type="StaticBody3D" parent="Ground"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("1_bg2b2")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/Ground"]
@@ -1209,7 +1208,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1, 21)
 navigation_mesh = SubResource("NavigationMesh_y5572")
 
 [node name="Ground2" type="StaticBody3D" parent="Ground2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("3_i0bin")
 
 [node name="Area3D" type="Area3D" parent="Ground2/Ground2"]
@@ -1493,7 +1491,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -1, 21)
 navigation_mesh = SubResource("NavigationMesh_1sc5s")
 
 [node name="Ground3" type="StaticBody3D" parent="Ground3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("4_cs3ch")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground3/Ground3"]
@@ -1732,7 +1729,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, -1, 1)
 navigation_mesh = SubResource("NavigationMesh_igfia")
 
 [node name="Ground4" type="StaticBody3D" parent="Ground4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("5_u0cpa")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground4/Ground4"]
@@ -1923,7 +1919,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1, 1)
 navigation_mesh = SubResource("NavigationMesh_u4baq")
 
 [node name="Ground5" type="StaticBody3D" parent="Ground5"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("6_rbfv5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground5/Ground5"]
@@ -2240,7 +2235,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -1, 1)
 navigation_mesh = SubResource("NavigationMesh_s2tjf")
 
 [node name="Ground6" type="StaticBody3D" parent="Ground6"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("7_nkmqw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground6/Ground6"]
@@ -2590,7 +2584,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, -1, -19)
 navigation_mesh = SubResource("NavigationMesh_132co")
 
 [node name="Ground7" type="StaticBody3D" parent="Ground7"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("8_gs2d7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground7/Ground7"]
@@ -2829,7 +2822,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1, -19)
 navigation_mesh = SubResource("NavigationMesh_px7pp")
 
 [node name="Ground8" type="StaticBody3D" parent="Ground8"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("9_gio5g")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground8/Ground8"]
@@ -3194,7 +3186,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -1, -19)
 navigation_mesh = SubResource("NavigationMesh_42bm7")
 
 [node name="Ground9" type="StaticBody3D" parent="Ground9"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("10_nfsfr")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground9/Ground9"]
